@@ -1,0 +1,67 @@
+Year,Indicator,Value
+2013,Total External debt stocks,427245.1
+2014,Total External debt stocks,457507.4
+2015,Total External debt stocks,478831.0
+2016,Total External debt stocks,455541.9
+2017,Total External debt stocks,511575.7
+2018,Total External debt stocks,521175.7
+2019,Total External debt stocks,561017.4
+2020,Total External debt stocks,564979.3
+2021,Total External debt stocks,611987.2
+2022,Total External debt stocks,615516.0
+2023,Total External debt stocks,646787.1
+2013,debt_service,37587.2
+2014,debt_service,91757.7
+2015,debt_service,48586.6
+2016,debt_service,75511.5
+2017,debt_service,49013.2
+2018,debt_service,60205.100000000006
+2019,debt_service,47650.700000000004
+2020,debt_service,74641.09999999999
+2021,debt_service,50878.1
+2022,debt_service,62462.899999999994
+2023,debt_service,73954.6
+2013,debt_service_ratio,8.797573102652319
+2014,debt_service_ratio,20.056003465736293
+2015,debt_service_ratio,10.146920312176947
+2016,debt_service_ratio,16.576192003413954
+2017,debt_service_ratio,9.580830363912906
+2018,debt_service_ratio,11.551785702978862
+2019,debt_service_ratio,8.49362247944538
+2020,debt_service_ratio,13.211298183844963
+2021,debt_service_ratio,8.313588911663512
+2022,debt_service_ratio,10.148054640334287
+2023,debt_service_ratio,11.434148887632423
+2013,short_term_ratio,21.698575361074944
+2014,short_term_ratio,18.70446248519696
+2015,short_term_ratio,17.033734240264312
+2016,short_term_ratio,18.424847417987234
+2017,short_term_ratio,19.07999148513114
+2018,short_term_ratio,19.940281175810767
+2019,short_term_ratio,19.033188631939044
+2020,short_term_ratio,18.325113858153742
+2021,short_term_ratio,18.73298984031039
+2022,short_term_ratio,20.77458587591549
+2023,short_term_ratio,19.530398797378616
+2013,public_debt_ratio,28.42885734675483
+2014,public_debt_ratio,33.33611653057415
+2015,public_debt_ratio,33.89732494345604
+2016,public_debt_ratio,33.58929222536939
+2017,public_debt_ratio,35.77525281204717
+2018,public_debt_ratio,34.64090900631015
+2019,public_debt_ratio,34.22487430871128
+2020,public_debt_ratio,34.12604674188948
+2021,public_debt_ratio,33.54346300053335
+2022,public_debt_ratio,33.34085547735558
+2023,public_debt_ratio,33.22819827420801
+2013,annual_growth_rate,
+2014,annual_growth_rate,7.083123949227277
+2015,annual_growth_rate,4.660820786723874
+2016,annual_growth_rate,-4.863741069396088
+2017,annual_growth_rate,12.300471153147496
+2018,annual_growth_rate,1.8765551217542198
+2019,annual_growth_rate,7.64458128036285
+2020,annual_growth_rate,0.7061991303656479
+2021,annual_growth_rate,8.32028713264361
+2022,annual_growth_rate,0.5766133670769724
+2023,annual_growth_rate,5.080469069853577
