@@ -1,4 +1,5 @@
 # International Debt Analysis
+![Thumbnail](thumbnail.jpg)
 
 ## Project Overview
 This project provides an analysis of international debt flows using various data visualization techniques.
@@ -47,12 +48,16 @@ The project generates several visualizations that provide insights into internat
 
 - Displays the correlation between different debt indicators
 ![Debt Correlation](results/figures/debt_correlation.png)
+
 - Shows the ratio of debt to GDP over time.
 ![Debt to GDP Ratio](results/figures/debt_gdp_ratio.png)
+
 - Illustrates the growth rate of debt.
 ![Debt Growth Rate](results/figures/debt_growth_rate.png)
+
 - Visualizes the debt service ratio.
 ![Debt Service Ratio](results/figures/debt_service_ratio.png)
+
 - Highlights the debt trends in India.
 ![India Debt Trends](results/figures/india_debt_trends.png)
 
