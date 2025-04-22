@@ -45,8 +45,10 @@ This project is licensed under the MIT License.
 
 The project generates several visualizations that provide insights into international debt analysis. These outputs are located in the `results/figures` directory and include:
 
-- [Debt by Debtor](results/figures/debt_by_debtor.html): Visualizes the distribution of debt among different debtor types.
-- [Debt Composition](results/figures/debt_composition.html): Shows the composition of debt in terms of short-term and long-term.
-- [Debt Flows](results/figures/debt_flows.html): Illustrates the flow of debt over time.
+- ![Debt Correlation](results/figures/debt_correlation.png): Displays the correlation between different debt indicators.
+- ![Debt to GDP Ratio](results/figures/debt_gdp_ratio.png): Shows the ratio of debt to GDP over time.
+- ![Debt Growth Rate](results/figures/debt_growth_rate.png): Illustrates the growth rate of debt.
+- ![Debt Service Ratio](results/figures/debt_service_ratio.png): Visualizes the debt service ratio.
+- ![India Debt Trends](results/figures/india_debt_trends.png): Highlights the debt trends in India.
 
 These visualizations are integral to understanding the project's analytical capabilities and provide a comprehensive view of the data analyzed.
