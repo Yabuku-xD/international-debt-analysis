@@ -7,6 +7,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from scripts.utils import ensure_directory
+import warnings
 
 def load_processed_data():
     try:
@@ -178,6 +179,7 @@ def create_flow_visualizations(df, results):
         growth_rates_df = results['growth_rates']
 
         if 'Unnamed: 0' in growth_rates_df.columns:
+            warnings.filterwarnings("ignore", category=pd.errors.SettingWithCopyWarning)
             growth_rates_df = growth_rates_df.rename(columns={'Unnamed: 0': 'Year'})
             years = growth_rates_df['Year'].tolist() if 'Year' in growth_rates_df.columns else growth_rates_df.index.tolist()
         elif 'Year' in growth_rates_df.columns:
@@ -191,7 +193,7 @@ def create_flow_visualizations(df, results):
         
         if total_debt_growth_col and len(years) > 0:
             growth_col = total_debt_growth_col[0]
-            growth_data = growth_rates_df[growth_col].dropna()
+            growth_data = growth_rates_df.loc[:, growth_col].dropna()
             
             if len(growth_data) > 0:
                 plt.figure(figsize=(10, 6))

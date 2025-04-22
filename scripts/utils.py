@@ -1,8 +1,24 @@
 import pandas as pd
 import numpy as np
 import os
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-def load_data(file_path="notebooks/India.csv", encodings=["latin1", "cp1252", "ISO-8859-1"]):
+def ensure_directory(directory):
+    os.makedirs(directory, exist_ok=True)
+
+def setup_directories():
+    directories = [
+        "data/raw",
+        "data/processed", 
+        "results/figures", 
+        "results/tables"
+    ]
+    for directory in directories:
+        ensure_directory(directory)
+    return True
+
+def load_data(file_path, encodings=["latin1", "cp1252", "ISO-8859-1"]):
     for encoding in encodings:
         try:
             df = pd.read_csv(file_path, encoding=encoding)
@@ -22,23 +38,29 @@ def extract_value(df_filtered, year):
         return float(value)
     return 0
 
-def save_processed_data(processed_df, long_format, base_dir="data/processed"):
-    os.makedirs(base_dir, exist_ok=True)
-    processed_df.to_csv(f"{base_dir}/india_debt_processed.csv", index=False)
-    long_format.to_csv(f"{base_dir}/india_debt_long.csv", index=False)
-    print(f"Data saved to {base_dir} directory")
+def save_dataframe(df, path, index=False):
+    ensure_directory(os.path.dirname(path))
+    df.to_csv(path, index=index)
+    print(f"Data saved to {path}")
 
-def create_long_format(processed_df):
+def create_long_format(df):
     long_format = pd.DataFrame()
-    for metric in processed_df.columns:
-        if metric != 'Year':
+    
+    for column in df.columns:
+        if column != 'Year':
             temp_df = pd.DataFrame({
-                'Year': processed_df['Year'],
-                'Indicator': metric,
-                'Value': processed_df[metric]
+                'Year': df['Year'],
+                'Indicator': column,
+                'Value': df[column]
             })
             long_format = pd.concat([long_format, temp_df])
+    
     return long_format
 
-def ensure_directory(directory):
-    os.makedirs(directory, exist_ok=True)
+def get_year_columns(df):
+    return [col for col in df.columns if str(col).isdigit()]
+
+def set_visualization_style():
+    plt.style.use('ggplot')
+    sns.set_palette("viridis")
+    return True

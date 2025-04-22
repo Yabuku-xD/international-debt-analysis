@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from scripts.utils import load_data, extract_value, save_processed_data, create_long_format, ensure_directory
+from scripts.utils import load_data, extract_value, save_dataframe, create_long_format, ensure_directory
 
 def load_cleaned_data():
     return load_data("notebooks/India.csv")
@@ -67,7 +67,8 @@ def process_data(df):
 
     long_format = create_long_format(processed_df)
 
-    save_processed_data(processed_df, long_format)
+    save_dataframe(processed_df, "data/processed/india_debt_processed.csv")
+    save_dataframe(long_format, "data/processed/india_debt_long.csv")
     
     print("Data processing completed successfully")
     return processed_df, long_format
