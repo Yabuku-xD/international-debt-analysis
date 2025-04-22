@@ -22,11 +22,12 @@ pip install -r requirements.txt
 ## Usage
 - To run the complete analysis pipeline:
 ```bash
-python main.py```
+python main.py
+```
 - To run specific steps of the pipeline:
 ```bash
 python main.py --steps preprocessing analysis visualization```
-
+```
 ## Analysis Components
 - Data Preprocessing: Cleans and structures the raw debt data
 - Time Series Analysis: Analyzes debt trends and seasonality
